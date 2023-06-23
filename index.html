@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yelp - Home page</title>
     <link rel="stylesheet" href="styles.css" />
+     <script  src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
+    <div id="login-signup-message"></div>
     <div class="container">
+        
       <div class="shadow">
         <div class="logo">
           <h1>yelp</h1>
@@ -407,5 +410,26 @@
       </div>
       
     </div>
+    <script >
+        function popUp() {
+             Swal.fire({
+                title: 'Signup or LogIn first',
+                showDenyButton: true,
+                showCancelButton: true,
+                confirmButtonText: 'LogIn',
+                denyButtonText: `SignUp`,
+                }).then((result) => {
+
+                if (result.isConfirmed) {
+                     window.location.href = "login.html";
+                } else if (result.isDenied) {
+                    window.location.href = "signup.html";
+                }
+        })
+    }
+  
+  let result = popUp();
+  document.getElementById("login-signup-message").innerHTML = result;
+    </script>
   </body>
 </html>

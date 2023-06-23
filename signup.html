@@ -5,122 +5,304 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up - Yelp</title>
-    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="stylesSignup.css" />
   </head>
   <body>
-    <div class="header">
-      <h1>yelp</h1>
-      <img src="images/logo1.svg" height="30px" width="30px" />
+    <div class="container">
+      <div class="header">
+        <h1>yelp</h1>
+        <img src="images/logo1.svg" height="30px" width="30px" />
+      </div>
+      <div class="section1">
+        <div class="main">
+          <div class="columns cols-1">
+            <div class="line line-1"><h2>Sign Up for Yelp</h2></div>
+            <div class="line line-2">
+              <p>Connect with great local businesses</p>
+            </div>
+            <div class="line-3">
+              <p>
+                By continuing, you agree to Yelp’s
+                <span style="color: #0b7e99">Terms of Service</span> and
+                acknowledge Yelp’s
+                <span style="color: #0b7e99">Privacy Policy</span>.
+              </p>
+            </div>
+            <div class="socials facebook">
+              <img
+                src="images/facebook1.svg"
+                width="30px"
+                height="30px"
+                alt=""
+              />
+              <p>Continue with Facebook</p>
+            </div>
+            <div class="socials apple">
+              <img src="images/apple.svg" width="35px" height="35px" alt="" />
+              <p>Continue with Apple</p>
+            </div>
+            <p class="text">
+              Don't worry we never post without your permission.
+            </p>
+            <div class="break">
+              <hr style="color: #bebebe" />
+              <p style="color: #858383">OR</p>
+            </div>
+            <div class="break"><hr style="color: #bebebe" /></div>
+            <div class="form-1">
+              <form>
+                <input placeholder="First Name" type="text" />
+                <input placeholder="Last Name" type="text" />
+                <input placeholder="Email" type="email" id="emailInput" />
+                <input
+                  placeholder="Password"
+                  type="password"
+                  id="passwordInput"
+                />
+                <input
+                  placeholder="Confirm Password"
+                  type="password"
+                  id="confirmPasswordInput"
+                />
+                <input placeholder="Zip Code" type="zipcode" />
+              </form>
+            </div>
+            <div class="warning-email" style="display: none">
+              <img src="images/warn.svg" width="20" height="20" />
+              <p>Please include '@' in the email address. '@' is missing</p>
+            </div>
+            <div class="arrow-email" style="display: none">
+              <img src="images/up.svg" alt="" width="25" height="25" />
+              <hr />
+            </div>
+            <div class="warning" style="display: none">
+              <img src="images/warn.svg" width="20" height="20" />
+              <p>Password do not match</p>
+            </div>
+            <div class="arrow" style="display: none">
+              <img src="images/up.svg" alt="" width="25" height="25" />
+              <hr />
+            </div>
+            <div class="passEnforcement" style="display: none">
+              <div class="passBar"></div>
+              <br />
+              <p>Password strenght: Great</p>
+            </div>
+            <div class="passEnforcement2" style="display: none">
+              <div class="passBar2"></div>
+              <div class="passBar3"></div>
+              <p>Password strength: Weak</p>
+            </div>
+            <div class="signup" id="signupButton">
+              <!-- <button>Sign up</button> -->
+              <p>Sign Up</p>
+            </div>
+            <div class="pp">
+              <p>
+                Already on yelp?
+                <a href="login.html" style="color: #0b7e99">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="columns cols-2">
+          <img src="images/signup.png" alt="" />
+        </div>
+      </div>
+      <div class="f1">
+        <div class="col1">
+          <div class="rows row-1">
+            <h3>About</h3>
+            <ul>
+              <li>About Yelp</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Investor Relations</li>
+              <li>Trust and Safety</li>
+              <li>Content Guidelines</li>
+              <li>Accessibility Statement</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>Ad Choices</li>
+              <li>Your Privacy Choices</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="rows row-2">
+            <h3>Discover</h3>
+            <ul>
+              <li>Yelp Project Cost Guides</li>
+              <li>Collections</li>
+              <li>Talk</li>
+              <li>Events</li>
+              <li>Yelp Blog</li>
+              <li>Support</li>
+              <li>Yelp Mobile</li>
+              <li>Developers</li>
+              <li>RSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col3">
+          <div class="rows row-3">
+            <h3>Yelp for Business</h3>
+            <ul>
+              <li>Yelp for Business</li>
+              <li>Business Owner Login</li>
+              <li>Claim your Business Page</li>
+              <li>Advertise on Yelp</li>
+              <li>Yelp for Restaurant Owners</li>
+              <li>Table Management</li>
+              <li>Business Success Stories</li>
+              <li>Business Support</li>
+              <li>Yelp Blog for Business</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col4">
+          <div class="rows row-4">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                English
+                <img src="images/drop3.svg" height="10px" width="13px" />
+              </li>
+            </ul>
+            <h3>Countries</h3>
+            <ul>
+              <li>
+                Canada <img src="images/drop3.svg" height="10px" width="13px" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="copyright">
+            <img src="images/Capture.PNG" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="main">
-      <div class="columns cols-1">
-        <div class="line line-1"><h2>Sign Up for Yelp</h2></div>
-        <div class="line line-2">
-          <p>Connect with great local businesses</p>
-        </div>
-        <div class="line-3">
-          <p>
-            By continuing, you agree to Yelp’s
-            <span style="color: #0b7e99">Terms of Service</span> and acknowledge
-            Yelp’s <span style="color: #0b7e99">Privacy Policy</span>.
-          </p>
-        </div>
-        <div class="socials facebook">
-          <img src="images/facebook1.svg" width="30px" height="30px" alt="" />
-          <p>Continue with Facebook</p>
-        </div>
-        <div class="socials apple">
-          <img src="images/apple.svg" width="35px" height="35px" alt="" />
-          <p>Continue with Apple</p>
-        </div>
-        <p class="text">Don't worry we never post without your permission.</p>
-        <div class="break">
-          <hr style="color: #bebebe" />
-          <p style="color: #858383">OR</p>
-        </div>
-        <div class="break"><hr style="color: #bebebe" /></div>
-        <div class="form-1">
-          <form>
-            <input placeholder="First Name" type="text" />
-            <input placeholder="Last Name" type="text" />
-            <input placeholder="Email" type="email" />
-            <input placeholder="Password" type="password" />
-            <input placeholder="Zip Code" type="zipcode" />
-          </form>
-        </div>
-        <div class="signup">
-          <p>Sign Up</p>
-        </div>
-        <div class="pp">
-          <p>Already on yelp? <span style="color: #0b7e99">Login</span></p>
-        </div>
-      </div>
-      <div class="columns cols-2">
-        <img src="images/signup.png" alt="" />
-      </div>
-    </div>
-    <div class="footer">
-      <div class="rows row-1">
-        <h3>About</h3>
-        <ul>
-          <li>About Yelp</li>
-          <li>Careers</li>
-          <li>Press</li>
-          <li>Investor Relations</li>
-          <li>Trust and Safety</li>
-          <li>Content Guidelines</li>
-          <li>Accessibility Statement</li>
-          <li>Terms of Service</li>
-          <li>Privacy Policy</li>
-          <li>Ad Choices</li>
-          <li>Your Privacy Choices</li>
-        </ul>
-      </div>
-      <div class="rows row-2">
-        <h3>Discover</h3>
-        <ul>
-          <li>Yelp Project Cost Guides</li>
-          <li>Collections</li>
-          <li>Talk</li>
-          <li>Events</li>
-          <li>Yelp Blog</li>
-          <li>Support</li>
-          <li>Yelp Mobile</li>
-          <li>Developers</li>
-          <li>RSS</li>
-        </ul>
-      </div>
-      <div class="rows row-3">
-        <h3>Yelp for Business</h3>
-        <ul>
-          <li>Yelp for Business</li>
-          <li>Business Owner Login</li>
-          <li>Claim your Business Page</li>
-          <li>Advertise on Yelp</li>
-          <li>Yelp for Restaurant Owners</li>
-          <li>Table Management</li>
-          <li>Business Success Stories</li>
-          <li>Business Support</li>
-          <li>Yelp Blog for Business</li>
-        </ul>
-      </div>
-      <div class="rows row-4">
-        <h3>Languages</h3>
-        <ul>
-          <li>
-            English <img src="images/drop3.svg" height="10px" width="13px" />
-          </li>
-        </ul>
-        <h3>Countries</h3>
-        <ul>
-          <li>
-            Canada <img src="images/drop3.svg" height="10px" width="13px" />
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        <img src="images/Capture.PNG" alt="" />
-      </div>
-    </div>
+    <script>
+      //function to check the validity of the email address
+      document
+        .getElementById("emailInput")
+        .addEventListener("input", function () {
+          let emailInput = document.getElementById("emailInput");
+          let email = emailInput.value;
+          let warningDiv = document.querySelector(".warning-email");
+          let warningDiv2 = document.querySelector(".arrow-email");
+          if (!email.includes("@gmail.com")) {
+            emailInput.style.borderColor = "red";
+            warningDiv.style.display = "block";
+            warningDiv2.style.display = "block";
+          } else {
+            emailInput.style.borderColor = "rgb(94, 94, 94)";
+            warningDiv.style.display = "none";
+            warningDiv2.style.display = "none";
+          }
+        });
+
+      //function to check if the password and confirm password input matches
+      function validatePassword() {
+        var passwordInput = document.getElementById("passwordInput");
+        var confirmPasswordInput = document.getElementById(
+          "confirmPasswordInput"
+        );
+
+        var password = passwordInput.value;
+        var confirmPassword = confirmPasswordInput.value;
+        let warningDiv = document.querySelector(".warning");
+        let warningDiv2 = document.querySelector(".arrow");
+
+        if (password !== confirmPassword) {
+          confirmPasswordInput.style.borderColor = "red";
+          warningDiv.style.display = "block";
+          warningDiv2.style.display = "block";
+        } else {
+          confirmPasswordInput.style.borderColor = "rgb(94, 94, 94)";
+          warningDiv.style.display = "none";
+          warningDiv2.style.display = "none";
+        }
+      }
+
+      var confirmPasswordInput = document.getElementById(
+        "confirmPasswordInput"
+      );
+      confirmPasswordInput.addEventListener("input", validatePassword);
+
+      // function to check the strength of the password
+      function checkPasswordStrength() {
+        var passwordInput = document.getElementById("passwordInput");
+        var passEnforcement1 = document.querySelector(".passEnforcement");
+        var passEnforcement2 = document.querySelector(".passEnforcement2");
+
+        var password = passwordInput.value;
+        var hasCapitalLetter = /[A-Z]/.test(password);
+        var hasNonAlphanumeric = /[^a-zA-Z0-9]/.test(password);
+        var hasMinLength = password.length >= 8;
+
+        if (hasCapitalLetter && hasNonAlphanumeric && hasMinLength) {
+          passEnforcement1.style.display = "block";
+          passEnforcement2.style.display = "none";
+        } else {
+          passEnforcement1.style.display = "none";
+          passEnforcement2.style.display = "block";
+        }
+
+        // Check if all rules are met
+        if (
+          hasCapitalLetter &&
+          hasNonAlphanumeric &&
+          hasMinLength &&
+          password.length > 0
+        ) {
+          setTimeout(function () {
+            passEnforcement1.style.display = "none";
+            passEnforcement2.style.display = "none";
+          }, 1500); // Display for 1.5 seconds before hiding
+        }
+      }
+
+      var passwordInput = document.getElementById("passwordInput");
+      passwordInput.addEventListener("input", checkPasswordStrength);
+
+      //function to enable disable the sign up button
+      function checkEnforcementRules() {
+        var passwordInput = document.getElementById("passwordInput");
+        var confirmPasswordInput = document.getElementById(
+          "confirmPasswordInput"
+        );
+        var signupButton = document.getElementById("signupButton");
+
+        var password = passwordInput.value;
+        var confirmPassword = confirmPasswordInput.value;
+
+        if (
+          password === confirmPassword &&
+          password !== "" &&
+          confirmPassword !== ""
+        ) {
+          signupButton.style.backgroundColor = "red";
+          signupButton.style.cursor = "pointer";
+          signupButton.disabled = false;
+        } else {
+          signupButton.style.backgroundColor = "gray";
+          signupButton.style.cursor = "not-allowed";
+          signupButton.disabled = true;
+        }
+      }
+
+      var passwordInput = document.getElementById("passwordInput");
+      var confirmPasswordInput = document.getElementById(
+        "confirmPasswordInput"
+      );
+
+      passwordInput.addEventListener("input", checkEnforcementRules);
+      confirmPasswordInput.addEventListener("input", checkEnforcementRules);
+    </script>
   </body>
 </html>
